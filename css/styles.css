@@ -68,6 +68,7 @@ img {
 
     background-color: var(--color-white);
     border-bottom: 1px solid #E7E9FC;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .header-container {
@@ -145,14 +146,17 @@ img {
 .header-mail:focus {
     color: var(--color-ocean);
 }
-/* Hero section */
 
+/* Hero section */
 .hero {
     min-width: 600px;
 
     padding: 188px 0px;
 
     background-color: var(--color-navy-blue);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../img/hero/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .hero-conteiner {
@@ -198,7 +202,6 @@ background-color: var(--color-ocean);
 }
 
 /* Our Feutures */
-
 .features {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -213,6 +216,25 @@ background-color: var(--color-ocean);
 
 .features-item {}
 
+.features-box-icon:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.features-box-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+
+    margin-bottom: 8px;
+
+    background-color: var(--color-cloud);
+    border-radius: 4px;
+}
+
+.features-icon{}
+
 .features-title {
     margin-bottom: 8px;
 
@@ -226,7 +248,6 @@ background-color: var(--color-ocean);
 .features-desc {}
 
 /* What are we doing */
-
 .do {
     margin: 0px;
     padding-bottom: 120px;
@@ -256,7 +277,6 @@ background-color: var(--color-ocean);
 .do-img {}
 
 /*  Our team section */
-
 .team {
     padding: 120px 0px;
     background-color: var(--color-cloud);
@@ -306,13 +326,75 @@ background-color: var(--color-ocean);
 }
 
 .team-desc {
+    margin-bottom: 8px;
+
     color: var(--color-slate);
 
     text-align: center;
 }
 
-/* Footer section */
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
 
+.socials-item {}
+
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+    background-color: var(--color-iris);
+    border-radius: 50%;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+background-color: var(--color-ocean);
+}
+
+.socials-icon {}
+
+/* Customers */
+.customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+}
+
+.customers-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36);
+
+    margin-bottom: 72px;
+
+    color: var(--color-navy-blue);
+
+    text-align: center;
+}
+
+.customers-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+
+.customers-item {
+    padding: 16px 32px;
+    border: 1px solid #8E8F99;
+    border-radius: 4px;}
+
+.customers-link {}
+
+.customers-logo {}
+
+/* Footer section */
 .footer {
     padding: 100px 0px;
 
@@ -321,7 +403,11 @@ background-color: var(--color-ocean);
 }
 
 .footer-conteiner {
+    display: flex;
+    gap: 120px;
 }
+
+.footer-left-side {}
 
 .footer-logo {
     display: block;
@@ -353,6 +439,41 @@ background-color: var(--color-ocean);
     color: var(--color-cornflower);
 }
 
+.footer-center-side {}
+
+.footer-social-desc {
+    margin-bottom: 16px;
+
+    color: var(--color-white);
+}
+
+.footer-socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.footer-socials-item {}
+
+.footer-socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.footer-socials-link:hover,
+.footer-socials-link:focus {
+    background-color: var(--color-green);
+}
+
+.footer-socials-icon {}
 /* Portfolio */
 
 /* Filters Section */
@@ -412,6 +533,15 @@ background-color: var(--color-ocean);
 
     border: 1px solid #E7E9FC;
     border-top: none;
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.project-thumb:hover,
+.project-thumb:focus {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16),
+        0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .project-title { 
